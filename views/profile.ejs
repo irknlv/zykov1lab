@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Профиль пользователя</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            background-color: rgb(171, 171, 171);
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        ul {
+            background-color: white;
+            padding: 40px 25px;
+            border-radius: 10%;
+            border: 1px solid white;
+            list-style: none;
+            margin: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        strong {
+            font-weight: bold;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .info-container-ul{
+            height: 600px;
+            font-weight: 700;
+            display: flex;
+            justify-content: center;
+            align-items: center;   
+            font-size: 30px;         
+        }
+    </style>
+</head>
+<body>
+    <div class="info-container-ul">
+        Добро пожаловать, <%= user.fullname %>!
+    </div>
+</body>
+</html>

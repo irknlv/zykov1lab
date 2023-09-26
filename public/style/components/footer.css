@@ -1,0 +1,50 @@
+.footer{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-bottom: 50px;
+}
+.footer>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+.footer>div>a, .footer>div>span{
+    font-size: 11px;
+    font-weight: 400;
+    color:#737373;
+    text-decoration: none;
+}
+.footer-links-language{
+    display: flex;
+    align-items:center;
+    gap: 5px;
+}
+/* Медиа-запрос для экранов шириной 414px и меньше (iPhone 14 Pro) */
+@media (max-width: 414px) {
+    .wrapper{
+        width: 414px;
+    }
+    /* Уменьшили верхний отступ для экономии места */
+    .footer {
+      margin-top: 20px;
+      gap: 10px; /* Уменьшили промежуток между элементами */
+    }
+    .footer div{
+        flex-wrap: wrap;
+    }
+    /* Уменьшили размер шрифта и отступы внутри footer */
+    .footer > div > a,
+    .footer > div > span {
+      font-size: 10px;
+      gap: 5px;
+    }
+  
+    /* Уменьшили размер шрифта для элементов .footer-links-language */
+    .footer-links-language {
+      gap: 3px; /* Уменьшили промежуток между элементами */
+    }
+  }
+  

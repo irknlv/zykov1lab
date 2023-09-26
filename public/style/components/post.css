@@ -1,0 +1,46 @@
+.profile-media{
+    border-top: 1.5px solid #DBDBDB;
+    padding: 20px 125px;
+    position: relative;
+}
+.profile-media>div{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.profile-media>div::before{
+    content: "";
+    position: absolute;
+    border: 1px solid black;
+    width: 53px;
+    top: -1.5px;
+}
+.profile-media span{
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 600;
+    font-family: 'Segoe UI', sans-serif;
+}
+.profile-posts{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+    justify-content: space-between;
+}
+.profile-post{
+    position: relative;
+    cursor: pointer;
+}
+.profile-post-image{
+    width: 293px;
+    height: 293px;
+}
+.profile-post-image img{
+    width: 293px;
+    height: 293px;
+}
+.profile-post-typeIcon{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
